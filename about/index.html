@@ -123,19 +123,6 @@ section.svelte-1xc63r4.svelte-1xc63r4{display:grid;place-items:center;max-width:
       .catch(e => console.error(e))
     
 
-      import('/_symbols/86293b63-933b-4713-89c7-583bfd23ae43.js')
-      .then(({default:App}) => {
-        
-            new App({
-              target: document.querySelector('#section-8317423c'),
-              hydrate: true,
-              props: {"logo":{"title":"Coding Font","image":{"alt":"","src":"","url":"","size":null}},"site_nav":[{"link":{"url":"/","label":"Home"}},{"link":{"url":"/blog","label":"Blog"}},{"link":{"url":"/about","label":"About"}}]}
-            })
-          
-      })
-      .catch(e => console.error(e))
-    
-
       import('/_symbols/b5fc984a-a5f3-4b54-9289-d923dfd42008.js')
       .then(({default:App}) => {
         
@@ -143,6 +130,19 @@ section.svelte-1xc63r4.svelte-1xc63r4{display:grid;place-items:center;max-width:
               target: document.querySelector('#section-fee6e3a4'),
               hydrate: true,
               props: {"heading":"Sign up to get weekly blog entires about X topic ","form":{"endpoint":"https://formsubmit.co/your@email.com","placeholder":"Email address","button_label":"Submit","error_message":"Something went wrong 💀","success_message":"You're signed up 🎉"}}
+            })
+          
+      })
+      .catch(e => console.error(e))
+    
+
+      import('/_symbols/86293b63-933b-4713-89c7-583bfd23ae43.js')
+      .then(({default:App}) => {
+        
+            new App({
+              target: document.querySelector('#section-8317423c'),
+              hydrate: true,
+              props: {"logo":{"image":{"alt":"","src":"","url":"","size":null},"title":"Coding Font"},"site_nav":[{"link":{"url":"/","label":"Home"}},{"link":{"url":"/blog","label":"Blog"}},{"link":{"url":"/about","label":"About"}}]}
             })
           
       })

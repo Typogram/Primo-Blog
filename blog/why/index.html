@@ -1,0 +1,130 @@
+  <!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta name="generator" content="Primo" />
+      <title>Blog Posts</title><!-- HEAD_svelte-1pww12a_START --><link rel="shortcut icon" type="image/jpg" sizes="32x32" href="https://github.com/primocms/primo/blob/master/static/primologo.png?raw=true"><link rel="preconnect" href="https://fonts.bunny.net"><link href="https://fonts.bunny.net/css?family=inter:100,200,300,400,500,600,700,800,900" rel="stylesheet"><link href="https://fonts.bunny.net/css?family=merriweather:300,300i,400,400i,700,700i,900,900i" rel="stylesheet"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.4.0/dist/themes/light.css"><script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.4.0/dist/shoelace-autoloader.js"></script><link rel="shortcut icon" type="image/jpg" sizes="32x32" href="https://github.com/primocms/primo/blob/master/static/primologo.png?raw=true"><meta name="description" content="These are my blog posts and they are wonderful."><meta property="og:image" content="https://images.unsplash.com/photo-1682674396903-9d601f2bfe43?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=2370&amp;q=80">
+  <meta name="twitter:image" content="https://images.unsplash.com/photo-1682674396903-9d601f2bfe43?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=2370&amp;q=80"><style>/* Reset & standardize default styles */
+@import url("https://unpkg.com/@primo-app/primo@1.3.64/reset.css") layer;
+
+/* Design tokens (apply to components) */
+:root {
+  /* Custom theme options */
+  --color-accent: black;
+  --color-accent2: #999999;
+  --color-shade: #2d3339;
+
+  --inner-max-width: 800px;
+
+  /* Base values */
+  --box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+  --border-radius: 2px;
+  --border-color: #e0e1e1;
+  --body-font: "Merriweather", serif;
+  --heading-font: "Inter", sans-serif;
+}
+
+/* Root element (use instead of `body`) */
+#page {
+  font-family: var(--heading-font);
+  color: #111;
+  line-height: 1.5;
+  font-size: 1.125rem;
+  background: white;
+}
+
+/* Elements */
+.section-container {
+  max-width: 1150px;
+  margin: 0 auto;
+  padding: 5rem 2rem;
+}
+
+a.link {
+  line-height: 1.3;
+  border-bottom: 2px solid var(--color-accent);
+  transform: translateY(-2px); /* move link back into place */
+  transition: var(--transition, 0.1s border);
+}
+
+a.link:hover {
+    border-color: transparent;
+  }
+
+.heading {
+  font-size: clamp(2rem, 10vw, 3rem);
+  line-height: 1.1;
+  font-weight: 600;
+  letter-spacing: -0.15rem;
+}
+
+.button {
+  color: white;
+  background: var(--color-accent, rebeccapurple);
+  border-radius: 0;
+  padding: 1px 24px;
+  transition: var(--transition, 0.1s box-shadow);
+  border: 0; /* reset */
+  border-radius: 0.25rem;
+  font-size: 1rem;
+}
+
+.button:hover {
+    box-shadow: 0 0 0 2px var(--color-accent, rebeccapurple);
+  }
+
+.button.inverted {
+    background: transparent;
+    color: var(--color-accent, rebeccapurple);
+  }
+
+</style><!-- HEAD_svelte-1pww12a_END -->
+      <style>.section-container.svelte-ngjace.svelte-ngjace{display:flex;justify-content:space-between;align-items:center;padding-block:2rem}.logo.svelte-ngjace.svelte-ngjace{font-size:1.5rem;font-weight:600;line-height:1.2}.desktop-nav.svelte-ngjace.svelte-ngjace{display:none;align-items:center;justify-content:space-between;width:100%}.desktop-nav.svelte-ngjace nav.svelte-ngjace{display:flex;gap:1.75rem}.desktop-nav.svelte-ngjace nav a.link.svelte-ngjace{border-color:transparent;transition:border-color 0.1s;font-size:0.95rem;font-weight:500}.desktop-nav.svelte-ngjace nav a.link.svelte-ngjace:hover,.desktop-nav.svelte-ngjace nav a.link .active.svelte-ngjace{border-color:initial}@media(min-width: 800px){.desktop-nav.svelte-ngjace.svelte-ngjace{display:flex
+}}.mobile-nav.svelte-ngjace.svelte-ngjace{display:flex;align-items:center;justify-content:space-between;width:100%;font-weight:500}@media(min-width: 800px){.mobile-nav.svelte-ngjace.svelte-ngjace{display:none
+}}#popup.svelte-ngjace.svelte-ngjace{font-size:1.25rem;display:grid;gap:1rem;position:absolute;text-align:center;background-color:var(--background-color, white);box-shadow:var(--box-shadow, 0px 4px 30px rgba(0, 0, 0, 0.1));border-radius:var(--border-radius);inset:0.5rem;bottom:initial;padding:2rem;z-index:1}#popup.svelte-ngjace button#close.svelte-ngjace{position:absolute;right:1rem;top:1rem}
+.section-container.svelte-1lugy4n{max-width:var(--inner-max-width,800px);padding:2rem}.content.svelte-1lugy4n img{width:100%;margin:2rem 0;box-shadow:var(--box-shadow);border-radius:var(--border-radius)}.content.svelte-1lugy4n p{padding:0.25rem 0;line-height:1.5;font-family:var(--body-font);font-weight:300;margin-bottom:1rem;color:#2d3339}.content.svelte-1lugy4n a{text-decoration:underline}.content.svelte-1lugy4n h1{font-size:clamp(1.75rem, 10vw, 2.25rem);font-weight:600;letter-spacing:-0.08rem;margin-bottom:1rem;line-height:1.1}.content.svelte-1lugy4n h2{font-size:clamp(1.5rem, 10vw, 2.125rem);font-weight:600;margin-bottom:1rem;letter-spacing:-0.06rem;line-height:1.1}.content.svelte-1lugy4n h3{font-size:clamp(1.25rem, 10vw, 1.75rem);font-weight:600;margin-bottom:0.5rem;letter-spacing:-0.05rem;line-height:1.1}.content.svelte-1lugy4n ul{list-style:disc;padding:0.25rem 0;padding-left:1.25rem}.content.svelte-1lugy4n ol{list-style:decimal;padding-left:1.25rem;margin-bottom:2rem}.content.svelte-1lugy4n blockquote{padding:2rem;box-shadow:var(--box-shadow);border-radius:var(--border-radius)}
+.section-container.svelte-1excgdw.svelte-1excgdw{padding:2rem 2rem 1rem 2rem}hr.svelte-1excgdw.svelte-1excgdw{border-color:#F2F2F2}.footer.svelte-1excgdw.svelte-1excgdw{display:flex;justify-content:space-between;flex-direction:start column;gap:1rem;padding-top:1rem;padding-bottom:1rem}.copyright.svelte-1excgdw.svelte-1excgdw{font-size:0.75rem;color:var(--color-text-secondary, #2D3339)}.primo.svelte-1excgdw.svelte-1excgdw{font-weight:600;font-size:0.75rem}.primo.svelte-1excgdw a.svelte-1excgdw{text-decoration:underline}ul.svelte-1excgdw.svelte-1excgdw{display:flex;gap:1.5rem;font-size:1.5rem;list-style:none}ul.svelte-1excgdw a.svelte-1excgdw{transition:var(--transition)}ul.svelte-1excgdw a.svelte-1excgdw:hover{color:var(--color-accent)}@media(min-width: 600px){ul.svelte-1excgdw.svelte-1excgdw{font-size:1.25rem}}</style>
+    </head>
+    <body id="page">
+       
+<div class="section" id="section-034c61ee"><header class="section-container svelte-ngjace"><div class="desktop-nav svelte-ngjace"><a href="/" class="logo svelte-ngjace">Coding Font</a>
+    <nav class="svelte-ngjace"><a class="link svelte-ngjace" href="/">Home</a><a class="link svelte-ngjace" href="/blog">Blog</a><a class="link svelte-ngjace" href="/about">About</a></nav></div>
+  <div class="mobile-nav svelte-ngjace"><a href="/" class="logo svelte-ngjace">Coding Font</a>
+    <button id="open" aria-label="Open mobile navigation"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden role="img" width="30" height="30" viewBox="0 0 24 24" class="iconify iconify--eva"><!-- HTML_TAG_START --><g id="iconifySvelte0"><g id="iconifySvelte1"><g id="iconifySvelte2" fill="currentColor"><rect width="18" height="2" x="3" y="11" rx=".95" ry=".95"/><rect width="18" height="2" x="3" y="16" rx=".95" ry=".95"/><rect width="18" height="2" x="3" y="6" rx=".95" ry=".95"/></g></g></g><!-- HTML_TAG_END --></svg></button>
+    </div></header></div> 
+<div class="section" id="section-43bd7970"><div class="section"><div class="section-container content svelte-1lugy4n"><!-- HTML_TAG_START --><p>How has your week been treating you? As for me, I had a rejuvenating hike around the serene <a target="_blank" rel="noopener noreferrer nofollow" class="link" href="https://www.alltrails.com/trail/us/new-jersey/scarlet-oak-pond-to-macmilan-reservoir">Scarlet Oak Pond</a> to catch a glimpse of the fall foliage — it was beautiful! It was an experience that reminded me a lot about what we do here: finding paths through uncharted territories. I’ve attached a photo from the hike:</p><p>Now, shifting from the tranquility of nature to the bustling world of web development, let’s dive into today’s topic: <strong>Svelte</strong>.</p><p>As some of you might recall from previous newsletters, <a target="_blank" rel="noopener noreferrer nofollow" class="link" href="https://typogram.co/"><strong><em>Typogram</em></strong></a> has undergone a transformation, being rewritten from the ground up using Svelte. This three-month intense journey have given me lots to talk about! I am genuinely excited to unpack what I’ve learned, discuss why Svelte might just be the right tool for your next project, and perhaps, how it can make your development experience more enjoyable.</p><h2>Vite is the way to go</h2><p>Embarking on my Svelte journey, the starting point was actually with Vite. Let me take you back to May, shortly after our grand launch of Typogram. It was around this time I received a private message that would reroute my tech trajectory. A fellow developer flagged a crucial issue: Typogram’s absence of a proper build process and code minification could leave it vulnerable to hacking or reverse engineering.</p><p>Diving into <a target="_blank" rel="noopener noreferrer nofollow" class="link" href="https://vitejs.dev/">Vite</a>, I found it to be a revelation. It redefined the landscape of front-end development for me. Typogram originally bypassed a build process because my wariness of tools like create-react-app and webpack held me back. But Vite shifted my perspective with a superior developer experience. It offers hot module replacement, code bundling and minification, all wrapped in a straightforward configuration.</p><p>If you’re kicking off a new project now, I strongly recommend ensuring that your build process uses Vite. <strong>I’d even go as far to advise steering clear of frameworks that can’t be developed with Vite</strong>, like Next.js, which is tied exclusively to webpack. This limitation can lead to a less responsive dev server and a less-than-ideal developer experience.</p><p>Vite was the missing piece that not only secured Typogram but also elevated my entire approach to building web applications. It leads me to svelte.</p><h2>Build Time vs. Runtime: A Shift in Strategy</h2><p>After patching Typogram with Vite, I went down the rabbit hole of build processes. Vite works well with all major front-end frameworks including React, Vue, and Svelte. But here’s where Svelte breaks the mold — it leverages the build time like no other. It is not unfair to consider Svelte almost a new language that gets compiled into vanilla JavaScript. The build process strips away the need for a bulky library file at runtime, which is the typical case with Vue.js or React.js.</p><p>Simply put, Svelte does the heavy lifting upfront during build time, so the user's browser doesn’t have to during run time. It’s a straightforward swap: a bit more time spent during build time for a faster, smoother run time for every user out there. <strong>10 seconds of my time in exchange of 1 second of every user's time. That's a solid deal!</strong></p><h2>Embracing Web Standard Syntax Over Framework-Specific Syntax</h2><p>When Svelte takes my code and compiles it at build time, the final product is vanilla JavaScript — straightforward and standard. Moreover, peering into a typical Svelte component feels like a homecoming to the web development trinity: the good old HTML, CSS, and JavaScript.</p><p>This typical Svelte components are structured with JavaScript at the top, followed by HTML, and CSS at the bottom.</p><p>Here’s a guiding principle I’ve adopted: prioritize web standard syntax over bespoke framework syntax. Svelte’s syntax is akin to pure JavaScript. From event dispatching and handling to state declaration — as long as you're versed in JavaScript, Svelte's code will look familiar to you. For a JavaScript developer, Svelte feels intuitive, almost as if JavaScript was always meant to function this way.</p><p>This alignment with standard JavaScript syntax not only eases the onboarding process but also reinforces our JavaScript knowledge. It ensures that being a Svelte developer also means becoming a more proficient JavaScript developer. And in the fast-paced tech world where today’s hot tool can cool tomorrow, this means all the expertise you gain is transferable, even when the day that Svelte become unpopular comes.</p><p>In the article: <a target="_blank" rel="noopener noreferrer nofollow" class="link" href="https://www.epicweb.dev/why-i-wont-use-nextjs">Why I Won’t Use Next.js</a>, the author shared similar sentiment:</p><p><em>When I transitioned from Angular.js to React, I left a lot of Angular.js behind me. All of the time I had invested at getting really good at Angular.js felt like a huge waste. I don’t want that to ever happen to me again. So I prefer to focus on a framework that can not only give me what I want from the user experience perspective, but can also give me skills that I can use wherever I develop for the web.</em></p><p>I must admit to a small critique regarding <a target="_blank" rel="noopener noreferrer nofollow" class="link" href="https://www.melt-ui.com/">melt-ui</a> for the very same reasons. Melt-ui, a library that’s well-loved in the Svelte community, has a "builder" concept that is a stroke of genius, presenting a component library adaptable to any aesthetic — a feature that speaks volumes to me as a designer. However, its syntax is unmistakably melt-centric. The hours poured into mastering melt-ui are confined to its domain, with little carryover to other areas of Svelte. Regrettably, it wasn’t a match for my needs.</p><p>The syntax of melt-ui hinges on the use of specialized exported functions that may appear unfamiliar.</p><h2>Svelte’s not so secret weapon</h2><p>React, Vue, and Svelte serve as counterparts in the landscape of front-end frameworks, each providing a similar set of features. The stakes of this front-end frameworks competition are raised by their companion full-stack web frameworks: React is paired with Next.js, Vue is complemented by Nuxt.js, and Svelte boasts SvelteKit. Next, Nuxt and SvelteKit are counterparts to each other, offering full-stack solutions with uniform syntax for front and back ends.</p><p>SvelteKit is Svelte’s not-so-secret weapon. It stands out as the only first-party companion web framework in its category. In contrast, both Next and Nuxt were created by different teams than their dependency front-end frameworks. SvelteKit and Svelte share the same creator — Rich Harris — ensuring a unified vision for both. This means that as Harris ideates new features for Svelte, he's concurrently strategizing how to leverage it in SvelteKit. Truly, there's no tighter channel of collaboration than, say, sharing the same brain!</p><p>SvelteKit boasts a versatile adapter system that allows for deployment across various platforms, not just limited to Vercel but also including Cloudflare Pages, Cloudflare Workers (remarkably, it has separate adapters for these two Cloudflare services), Netlify, and traditional Node containers. Additionally, there’s a static adapter capable of generating a static site deployable on any platform that serves static content, like GitHub Pages.</p><p>Here is a feature that people rarely talk about: <a target="_blank" rel="noopener noreferrer nofollow" class="link" href="https://kit.svelte.dev/docs/packaging">@sveltejs/package</a>, which interestingly, flip the table on components vs, routes. Most SvelteKit projects publish routes, which are responsible for rendering the web pages. However with @sveltejs/package, the focus shifts — the components folder becomes the target for publishing, simplifying the process of packaging your Svelte components as an npm package. This feature was my gateway to publishing my own npm package for the first time! Meanwhile, the 'routes' folder is repurposed into a sandbox and documentation hub for these components. How clever!</p><h2>What I have built</h2><p>I've created five Svelte/SvelteKit side projects and can’t seem to stop – the ideas just keep flowing. Below are some exclusive sneak peeks into what’s brewing, including the much-anticipated second versions of CodingFont and Symbols to Copy. This is the first time I'm unveiling these links, take a look:</p><ul><li><p><a target="_blank" rel="noopener noreferrer nofollow" class="link" href="https://beta.codingfont.com/">CodingFont v2 Beta</a></p></li><li><p><a target="_blank" rel="noopener noreferrer nofollow" class="link" href="https://symbols.wentin.net/">Symbols to Copy v2</a></p></li><li><p><a target="_blank" rel="noopener noreferrer nofollow" class="link" href="https://diff.typogram.co/">Diff by Typogram</a></p></li></ul><p>I’m always looking to improve and refine my work, and who better to help guide that process than you? I’d be thrilled to get your initial impressions and constructive feedback on these unreleased projects, you can play a pivotal role in their final form!</p><!-- HTML_TAG_END --></div></div></div> 
+<div class="section" id="section-21ed0ee3"><footer><div class="section-container svelte-1excgdw"><hr class="svelte-1excgdw">
+    <div class="footer svelte-1excgdw"><span class="copyright svelte-1excgdw">Copyright 2023</span>
+      <span class="primo svelte-1excgdw"><a href="https://primo.so" class="svelte-1excgdw">Primo</a> Powered </span>
+      <ul class="svelte-1excgdw"><li><a href="https://twitter.com" aria-label="mdi:twitter" class="svelte-1excgdw"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden role="img" width="1em" height="1em" viewBox="0 0 24 24" class="iconify iconify--mdi"><!-- HTML_TAG_START --><path fill="currentColor" d="M22.46 6c-.77.35-1.6.58-2.46.69c.88-.53 1.56-1.37 1.88-2.38c-.83.5-1.75.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29c0 .34.04.67.11.98C8.28 9.09 5.11 7.38 3 4.79c-.37.63-.58 1.37-.58 2.15c0 1.49.75 2.81 1.91 3.56c-.71 0-1.37-.2-1.95-.5v.03c0 2.08 1.48 3.82 3.44 4.21a4.22 4.22 0 0 1-1.93.07a4.28 4.28 0 0 0 4 2.98a8.521 8.521 0 0 1-5.33 1.84c-.34 0-.68-.02-1.02-.06C3.44 20.29 5.7 21 8.12 21C16 21 20.33 14.46 20.33 8.79c0-.19 0-.37-.01-.56c.84-.6 1.56-1.36 2.14-2.23Z"/><!-- HTML_TAG_END --></svg></a>
+        </li><li><a href="https://github.com" aria-label="mdi:github" class="svelte-1excgdw"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden role="img" width="1em" height="1em" viewBox="0 0 24 24" class="iconify iconify--mdi"><!-- HTML_TAG_START --><path fill="currentColor" d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5c.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34c-.46-1.16-1.11-1.47-1.11-1.47c-.91-.62.07-.6.07-.6c1 .07 1.53 1.03 1.53 1.03c.87 1.52 2.34 1.07 2.91.83c.09-.65.35-1.09.63-1.34c-2.22-.25-4.55-1.11-4.55-4.92c0-1.11.38-2 1.03-2.71c-.1-.25-.45-1.29.1-2.64c0 0 .84-.27 2.75 1.02c.79-.22 1.65-.33 2.5-.33c.85 0 1.71.11 2.5.33c1.91-1.29 2.75-1.02 2.75-1.02c.55 1.35.2 2.39.1 2.64c.65.71 1.03 1.6 1.03 2.71c0 3.82-2.34 4.66-4.57 4.91c.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2Z"/><!-- HTML_TAG_END --></svg></a>
+        </li></ul></div></div></footer></div> 
+
+      <script type="module">
+      import('/_symbols/03d18f94-f200-4afd-b52b-e47aebad4d67.js')
+      .then(({default:App}) => {
+        
+            new App({
+              target: document.querySelector('#section-21ed0ee3'),
+              hydrate: true,
+              props: {"heading":"","email":"","social_links":[{"icon":"mdi:twitter","link":{"url":"https://twitter.com","label":"Twitter","active":false}},{"icon":"mdi:github","link":{"url":"https://github.com","label":"Github","active":false}}]}
+            })
+          
+      })
+      .catch(e => console.error(e))
+    
+
+      import('/_symbols/86293b63-933b-4713-89c7-583bfd23ae43.js')
+      .then(({default:App}) => {
+        
+            new App({
+              target: document.querySelector('#section-034c61ee'),
+              hydrate: true,
+              props: {"logo":{"image":{"alt":"","src":"","url":"","size":null},"title":"Coding Font"},"site_nav":[{"link":{"url":"/","label":"Home"}},{"link":{"url":"/blog","label":"Blog"}},{"link":{"url":"/about","label":"About"}}]}
+            })
+          
+      })
+      .catch(e => console.error(e))
+    </script>
+    </body>
+  </html>
+  
